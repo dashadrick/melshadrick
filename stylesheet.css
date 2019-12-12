@@ -1,28 +1,8 @@
-.footer {
+ul.menu {
     position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: #333;
-    text-align: center;
-    letter-spacing: .59em;
-    font-family: Avenir, Helvetica, Arial, "sans serif";
-}
-
-.name {
-    color: #333;
-    font-size: 100px;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: bold;
-
-}
-
-ul {
-    position: fixed;
+    list-style-type: none;
     top: 0;
     left: 0;
-    list-style-type: none;
     margin: 0;
     padding: 5;
     overflow: hidden;
@@ -31,11 +11,11 @@ ul {
 
 }
 
-li {
+ul.menu li {
     float: left;
 }
 
-li a {
+ul.menu li a {
     display: block;
     color: #333;
     font-family: Avenir, Helvetica, Arial, "sans serif";
@@ -45,22 +25,37 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+ul.menu li a:hover {
     background-color: #111;
     color: #ffffff;
 }
 
+/* Change the link color to #111 (black) on hover */
+ul.menu li a:hover {
+    background-color: #111;
+    color: #ffffff;
+}
+
+/*body*/
 .overview {
     background-color: lightgrey;
     color: black;
-    padding: 50px;
+  padding-top: 4em;
+  padding-bottom: 2em;
     margin-bottom: 50px;
     text-align: center;
     font-family: Avenir, Helvetica, Arial, "sans serif";
 
 }
 
+.name {
+    color: #333;
+    font-size: 100px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
 
+}
+/*GRID*/
 .portfolioGrid {
     width: 85%;
     margin: 0 auto;
@@ -121,3 +116,27 @@ li a:hover {
     background-color: white;
 }
 
+/*Footer*/
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: #333;
+   text-align: center;
+  letter-spacing: .59em;
+}
+a {
+    color: #0060B6;
+    text-decoration: none;
+    font-family: Avenir, Helvetica, Arial, "sans serif";
+
+}
+
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
+}

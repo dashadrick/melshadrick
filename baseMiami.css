@@ -1,3 +1,4 @@
+
 ul.menu {
     position: fixed;
     list-style-type: none;
@@ -29,16 +30,57 @@ ul.menu li a:hover {
     background-color: #111;
     color: #ffffff;
 }
+
 /*BODY*/
 body{
   background-color:lightgrey;
   font-family:Avenir,Helvetica,Arial,"sans serif";
    color: #333;
+   text-align: center;
+   line-height: 2em;
+ }
+
+
+.YIKES {
+  background-color: #ffffff;
+  font-family:Avenir,Helvetica,Arial,"sans serif";
+   color: #333;
+   text-align: center;
+   padding-top: 2em;
+   padding-left: 15em;
+   padding-right: 15em;
+   padding bottom: 2em;
+   line-height: 2em;
+
+}
+.overview {
+	background-color:lightgrey;
+	color:black;
+	padding:50px;
+	margin-bottom:50px;
+    text-align: center;
+  font-family:Avenir,Helvetica,Arial,"sans serif";
+}
+
+/*TITLE TAGS/HEADER*/
+
+.name{
+  color: #333;
+  font-size: 70px;
+  font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+   padding-bottom: 0;
+  line-height: .1px;
+  padding-top: 1.2em;
+}
+.titletag {
+  font-size: 40px;
+  line-height: .1px
 }
 
 
 /*grid*/
-.grid2 {
+.grid {
   /* Grid Fallback */
   display: flex;
   flex-wrap: wrap;
@@ -84,65 +126,9 @@ body{
   }
 }
 
-/*maybe delete*/
-#grid {
-  display: grid;
-  height: 20px;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(6, 1fr);
-}
-
-#item1 {
-
-}
-
-#item2 {
-  padding-bottom: 2em;
-}
-
-#item3 {
-  background-color: #ffffff;
-  font-family:Avenir,Helvetica,Arial,"sans serif";
-   color: #333;
-   text-align: center;
-   padding-top: 2em;
-   padding-left: 15em;
-   padding-right: 15em;
-   padding bottom: 15em;
-   line-height: 2em;
-
-}
-#item4 {
-  font-size: 15em
-  text-align: center;
-
-}
-
-/*maybe delete*/
-
-/*TITLE TAGS/HEADER*/
-
-.name{
-  color: #333;
-  font-size: 100px;
-  font-family: 'Libre Baskerville', serif;
-    font-weight: bold;
-   padding-bottom: 0;
-  line-height: .1px
-}
-.titletag {
-  font-size: 40px;
-  line-height: .1px
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
 
 /*Footer*/
+
 .footer {
    position: fixed;
    left: 0;

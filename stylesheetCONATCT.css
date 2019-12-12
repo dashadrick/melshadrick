@@ -1,3 +1,4 @@
+/*NAV BAR*/
 ul.menu {
     position: fixed;
     list-style-type: none;
@@ -59,21 +60,26 @@ h1 {
     text-indent: 50px;
 }
 
-
-
-
-
-
-
 /*Footer*/
-
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    color: #333;
-    text-align: center;
-    letter-spacing: .59em;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: #333;
+   text-align: center;
+  letter-spacing: .59em;
+}
+a {
+    color: #0060B6;
+    text-decoration: none;
+    font-family: Avenir, Helvetica, Arial, "sans serif";
+}
+
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
 }

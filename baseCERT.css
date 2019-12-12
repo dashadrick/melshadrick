@@ -30,6 +30,7 @@ ul.menu li a:hover {
     background-color: #111;
     color: #ffffff;
 }
+
 /*BODY*/
 body{
   background-color: #ffffff;
@@ -37,48 +38,64 @@ body{
    color: #333;
 }
 
-/*maybe delete*/
-#grid {
+
+.grid {
+  /* Grid Fallback */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Supports Grid */
   display: grid;
-  height: 20px;
-  grid-template-columns: auto;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+  padding-top: 1em;
+  padding-bottom: 10em;
+}
+.gridItem img {
+	display: block;
+	object-fit: contain;
+	width:100%;
+	height:100%;
 }
 
-#item1 {
+.module {
+  /* Demo-Specific Styles */
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
 
+
+
+  /* Flex Fallback */
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
 }
 
-#item2 {
-  padding-bottom: 2em;
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+  .module {
+    margin: 0;
+  }
 }
-
-#item3 {
-  font-size: 2em;
-  text-align: center;
-  padding-right: 7em;
-  padding-left: 7em;
-  padding-top: 7em;
-  padding-bottom: 7em;
-  line-height: 2 ;
-}
-}
-#item4 {
-  font-size: 15em
-
-}
-
-/*maybe delete*/
 
 /*TITLE TAGS/HEADER*/
 
 .name{
   color: #333;
-  font-size: 100px;
+  font-size: 60px;
   font-family: 'Libre Baskerville', serif;
     font-weight: bold;
    padding-bottom: 0;
-  line-height: .1px
+  line-height: .1px;
+ text-align: center;
+ padding-top: 1em;
 }
 .titletag {
   font-size: 40px;
@@ -97,4 +114,17 @@ body{
    color: #333;
    text-align: center;
   letter-spacing: .59em;
+}
+a {
+    color: #0060B6;
+    text-decoration: none;
+    font-family: Avenir, Helvetica, Arial, "sans serif";
+
+}
+
+a:hover
+{
+     color:#00A0C6;
+     text-decoration:none;
+     cursor:pointer;
 }
