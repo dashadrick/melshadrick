@@ -1,0 +1,59 @@
+
+
+.portfolioGrid {
+	width:85%;
+	margin:0 auto;
+  display: grid;
+  height: 95vh;
+	grid-auto-flow:dense;
+  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+  grid-gap: 5px;
+}
+
+.gridItem {
+
+	background-color:white;
+	color:white;
+	padding:10px;
+  font-size: 1.25em;
+	font-family:Helvetica,Avenir,Arial,sans-serif;
+}
+
+.gridItem img {
+	display: block;
+	object-fit:cover;
+	width:100%;
+	height:100%;
+}
+
+.small {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+
+	.long {
+	    grid-row: span 1;
+	    grid-column: span 5;
+	  }
+
+.medium {
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+.large {
+    grid-row: span 3;
+    grid-column: span 3;
+  }
+
+.tall {
+    grid-row: span 3;
+    grid-column: span 2;
+  }
+
+.wide {
+    grid-row: span 1.5;
+    grid-column: span 3;
+  }
+
+}

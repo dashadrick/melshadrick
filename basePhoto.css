@@ -1,0 +1,117 @@
+
+
+ul {
+  position: fixed;
+  list-style-type: none;
+  margin: 0;
+  padding: 5;
+  overflow: hidden;
+  background-color:  #ffffff;
+  width: 100%;
+  align: left;
+}
+
+li {
+  float: left;
+  vertical-align: top;
+}
+
+li a {
+  display: block;
+  color: #333;
+  font-family:Avenir,Helvetica,Arial,"sans serif";
+  padding: 18px 16px;
+  text-decoration: none;
+  vertical-align: top;
+
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+  color: #ffffff;
+}
+/*BODY*/
+body{
+  background-color: #ffffff;
+  font-family:Avenir,Helvetica,Arial,"sans serif";
+   color: #333;
+}
+
+
+.grid {
+  /* Grid Fallback */
+  display: flex;
+  flex-wrap: wrap;
+
+  /* Supports Grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 1em;
+  margin: 0 auto;
+  max-width: 56em;
+  padding: 1em 0;
+  padding-top: 1em;
+  padding-bottom: 10em;
+}
+.gridItem img {
+	display: block;
+	object-fit:cover;
+	width:100%;
+	height:100%;
+}
+
+.module {
+  /* Demo-Specific Styles */
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 280px;
+
+
+
+  /* Flex Fallback */
+  margin-left: 5px;
+  margin-right: 5px;
+  flex: 1 1 200px;
+}
+
+/* If Grid is supported, remove the margin we set for the fallback */
+@supports (display: grid) {
+  .module {
+    margin: 0;
+  }
+}
+
+/*TITLE TAGS/HEADER*/
+
+.name{
+  color: #333;
+  font-size: 60px;
+  font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+   padding-bottom: 0;
+  line-height: .1px;
+ text-align: center;
+ padding-top: 1em;
+}
+.titletag {
+  font-size: 40px;
+  line-height: .1px
+}
+
+
+/*Footer*/
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: white;
+   color: #333;
+   text-align: center;
+  letter-spacing: .59em;
+}
